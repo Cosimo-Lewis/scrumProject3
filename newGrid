@@ -1,0 +1,12 @@
+def makeGameArray():
+    counter = 0
+    gameArray = []
+    for i in range (0,99):
+        gameArray.append('-')
+    for y in range(0,9):
+        print ("\n")
+        for x in range(0,9):
+            print (gameArray[counter]," ",end="")
+            counter = counter + 1
+    return gameArray
+    
