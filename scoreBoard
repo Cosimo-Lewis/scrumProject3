@@ -1,0 +1,24 @@
+#Seena's Code
+
+
+def saveGuesses(winName, winCounter):
+    file = open('Connect 4 Scoreboard.txt','a')
+    theText = (winName + ' took ' + str(winCounter) + ' guesses to find the words.')
+    file.write(theText)
+    file.write(' ')
+    file.close()
+
+def showScoreboard():
+    fullstop = '.'
+    file = open('Connect 4 Scoreboard.txt',)
+    theText = file.read()
+    file.close()
+    stringLength = len(theText)
+    for rato in range(0, stringLength - 1):
+        if theText[rato] !=fullstop:
+            print(theText[rato], end = "")
+        else:
+            print(theText[rato])
+
+saveGuesses(winName, winCounter)
+showScoreboard() 
