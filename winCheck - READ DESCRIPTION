@@ -1,0 +1,19 @@
+def check(rowOne, rowTwo, rowThree, symbol):
+   if (rowOne[0] == symbol) and (rowOne[1] == symbol) and (rowOne2[2] == symbol):
+       return True
+   elif (rowTwo[0] == symbol) and (rowTwo[1] == symbol) and (rowTwo[2] == symbol):
+       return True
+   elif (rowThree[0] == symbol) and (rowThree[1] == symbol) and (rowThree[2] == symbol):
+       return True
+   elif (rowOne[0] == symbol) and (rowTwo[0] == symbol) and (rowThree[0] == symbol):
+       return True
+   elif (rowOne[1] == symbol) and (rowTwo[1] == symbol) and (rowThree[1] == symbol):
+       return True
+   elif (rowOne[2] == symbol) and (rowTwo[2] == symbol) and (rowThree[2] == symbol):
+       return True
+   elif (rowOne[0] == symbol) and (rowTwo[1] == symbol) and (rowThree[2] == symbol):
+       return True
+   elif (rowOne[2] == symbol) and (rowTwo[1] == symbol) and (rowThree[0] == symbol):
+       return True
+   else:
+       return False
