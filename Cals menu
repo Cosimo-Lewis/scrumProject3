@@ -1,5 +1,5 @@
 def menu():
-    playerOption = int(input('Enter 1 if you want to play player1 against player2 \nEnter 2 if you wish to play player1 against CPU \nEnter 3 if you wish to play the special mode, you have only between 10 and 20 moves to beat player2 '))
+    playerOption = int(input('Enter 1 if you want to play player against player \nEnter 2 if you wish to play player against CPU \nEnter 3 if you wish to play the special mode, you have only between 10 and 20 moves to beat player2 '))
     if playerOption == 1:
         placeCounter()
     if playerOption == 2:
