@@ -1,6 +1,7 @@
 def getUserName():
-    userName = input('Player one what is your name? ')
-    userName2 = input('Player two what is your name? ')
-    print(userName + ' and ' + userName2 + 'I hope you are in good health, welcome to Kenny\'s Connect Four, the rules are, you have to get four of your letter in a row, this can be diagonal or up or sideways, you do this by choosing your column that you wish to place your letter. Good luck')
-    return userName, userName2
+    player1 = input('Player one: what is your name? ')
+    player2 = input('Player two: what is your name? ')
+    print(player1 + ' and ' + player2 + 'I hope you are in good health; welcome to Kenny\'s Connect Four, \n\nthe rules are: \nyou have to get four of your letter in a row, this can be diagonal, upwards, downwards or sideways, you do this by choosing your column that you wish to place your letter. Good luck')
+    return player1, player2
+
 getUserName()
