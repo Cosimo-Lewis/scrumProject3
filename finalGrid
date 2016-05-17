@@ -1,0 +1,111 @@
+symbolArray = ["X","O"]
+
+def makeGameArray():
+    counter = 0
+    gameArray = []
+    for i in range (0,100):
+        gameArray.append('-')
+    for y in range(0,10):
+        print ("\n")
+        for x in range(0,10):
+            print (gameArray[counter]," ",end="")
+            counter = counter + 1
+    return gameArray
+
+
+def placeCounter(newGameArray):
+    counter = 0
+    playerCounter = 100
+    playerTurnCounter1 = 0
+    playerTurnCounter2 = 0
+    winCounter = 0
+    win = False
+    while win == False:
+        if playerCounter % 2 == 0:
+            symbol1 = symbolArray[0]
+            print("\n")
+            print("It is player1's turn")
+# Add player1's name here ^
+            place = int(input("Where would you like to place you piece? Pick between 1 and 10"))
+            if newGameArray[100 - 10 + place - 1] == "-":
+                place1 = 100 - 10 + place - 1
+            elif newGameArray[100 - 20 + place - 1] == "-":
+                place1 = 100 - 20 + place - 1
+            elif newGameArray[100 - 30 + place - 1] == "-":
+                place1 = 100 - 30 + place - 1
+            elif newGameArray[100 - 40 + place - 1] == "-":
+                place1 = 100 - 40 + place - 1
+            elif newGameArray[100 - 50 + place - 1] == "-":
+                place1 = 100 - 50 + place - 1
+            elif newGameArray[100 - 60 + place - 1] == "-":
+                place1 = 100 - 60 + place - 1
+            elif newGameArray[100 - 70 + place - 1] == "-":
+                place1 = 100 - 70 + place - 1
+            elif newGameArray[100 - 80 + place - 1] == "-":
+                place1 = 100 - 80 + place - 1
+            elif newGameArray[100 - 90 + place - 1] == "-":
+                place1 = 100 - 90 + place - 1
+            elif newGameArray[100 - 100 + place - 1] == "-":
+                place1 = 100 - 100 + place - 1
+            else:
+                place = int(input("That space has already been taken. PLease choose another one"))
+            counter = 0
+            newGameArray.pop(place1)
+            newGameArray.insert(place1,symbol1)
+            playerCounter = playerCounter - 1
+            for y in range(0,10):
+                print ("\n")
+                for x in range(0,10):
+                    print (newGameArray[counter]," ",end="")
+                    counter = counter + 1
+                
+        else:
+            symbol2 = symbolArray[1]
+            print("It is player2's turn")
+# Add player2's name here ^
+            place = int(input("Where would you like to place you piece? Pick between 1 and 10"))
+            place1 = 100 - 10 + place - 1
+            if newGameArray[place1] == "-":
+                place1 = 100 - 10 + place - 1
+            elif newGameArray[100 - 20 + place - 1] == "-":
+                place1 = 100 - 20 + place - 1
+            elif newGameArray[100 - 30 + place - 1] == "-":
+                place1 = 100 - 30 + place - 1
+            elif newGameArray[100 - 40 + place - 1] == "-":
+                place1 = 100 - 40 + place - 1
+            elif newGameArray[100 - 50 + place - 1] == "-":
+                place1 = 100 - 50 + place - 1
+            elif newGameArray[100 - 60 + place - 1] == "-":
+                place1 = 100 - 60 + place - 1
+            elif newGameArray[100 - 70 + place - 1] == "-":
+                place1 = 100 - 70 + place - 1
+            elif newGameArray[100 - 80 + place - 1] == "-":
+                place1 = 100 - 80 + place - 1
+            elif newGameArray[100 - 90 + place - 1] == "-":
+                place1 = 100 - 90 + place - 1
+            elif newGameArray[100 - 100 + place - 1] == "-":
+                place1 = 100 - 100 + place - 1
+            else:
+                place = int(input("That space has already been taken. PLease choose another one"))
+            counter = 0
+            newGameArray.pop(place1)
+            newGameArray.insert(place1,symbol2)
+            playerCounter = playerCounter - 1
+            for y in range(0,10):
+                print ("\n")
+                for x in range(0,10):
+                    print (newGameArray[counter]," ",end="")
+                    counter = counter + 1
+
+
+    
+def main():
+    newGameArray = makeGameArray()
+    placeCounter(newGameArray)
+    
+
+    
+
+
+
+main()
