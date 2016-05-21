@@ -12,6 +12,11 @@ def makeGameArray():
             counter = counter + 1
     return gameArray
 
+def specialModeage():
+    turns = 2*(randint(10,20))
+    turns = counter 
+    return counte
+    
 
 def placeCounter(newGameArray):
     counter = 0
