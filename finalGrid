@@ -32,6 +32,8 @@ def placeCounter(newGameArray):
             print("It is player1's turn")
 # Add player1's name here ^
             place = int(input("Where would you like to place you piece? Pick between 1 and 10"))
+            if place > 11:
+                place = int(input("PLease choose a number between 1 and 10"))
             if newGameArray[100 - 10 + place - 1] == "-":
                 place1 = 100 - 10 + place - 1
             elif newGameArray[100 - 20 + place - 1] == "-":
@@ -70,6 +72,8 @@ def placeCounter(newGameArray):
 # Add player2's name here ^
             place = int(input("Where would you like to place you piece? Pick between 1 and 10"))
             place1 = 100 - 10 + place - 1
+            if place > 11:
+                place = int(input("PLease choose a number between 1 and 10"))
             if newGameArray[place1] == "-":
                 place1 = 100 - 10 + place - 1
             elif newGameArray[100 - 20 + place - 1] == "-":
