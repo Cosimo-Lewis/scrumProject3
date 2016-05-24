@@ -1,0 +1,36 @@
+def winCheck():
+    counter = 0
+    mover = 0
+    while (counter != 4) and (mover <= 96):
+        for i in range(mover,+4):
+            print(i)
+            if newGameArray [i] == 'X':
+                counter = counter + 1
+            else:
+                counter = 0
+        mover = mover + 1
+    if counter == 4:
+            print('X wins')
+    else:
+            print('X did not win')
+    
+winCheck()
+
+def winCheckForO():
+    counter = 0
+    mover = 0
+    while (counter != 4) and (mover <= 96):
+        for i in range(mover,+4):
+            print(i)
+            if newGameArray [i] == 'O':
+                counter = counter + 1
+            else:
+                counter = 0
+        mover = mover + 1
+    if counter == 4:
+            print('O wins')
+    else:
+            print('O did not win')
+    
+winCheckForO()
+    
